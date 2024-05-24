@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_tab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:gravity="center"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="6dp"
+        android:paddingRight="3dp"
+        android:maxEms="10"
+        android:lines="1"
+        android:maxLength="10"
+        android:ellipsize="end"
+        android:background="@drawable/selector_label_button_bg"
+        android:textSize="10sp"
+        android:textColor="@android:color/white"
+        android:text="随机立减"/>
+
+</LinearLayout>

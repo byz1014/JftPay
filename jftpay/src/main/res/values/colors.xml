@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="epay_transparent">#00000000</color>
+    <color name="gray">#FE7E7F</color>
+    <color name="gray_1">#E2E2E2</color>
+    <color name="f3f3f3">#F3F3F3</color>
+    <color name="subcolor">#666666</color>
+    <color name="f4f7f7">#F4F7F7</color>
+    <color name="FFFFFF">#FFFFFF</color>
+    <color name="colorPrimary">#E2E2E2</color>
+    <color name="colorPrimaryDark">#222C3E</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="line">#eeeeee</color>
+    <color name="text_color_grey">#777777</color>
+    <color name="text_color_blak">#000000</color>
+    <color name="text_color_blak1">#FF000000</color>
+    <color name="bg_btn">#FF1777FF</color>
+    <color name="blue_light">#FF1777FF</color>
+    <color name="colorstatus">#3da1ff</color>
+
+
+    <color name="gray_text">#919191</color>
+    <color name="gray_btn">#EBEBEB</color>
+
+    <color name="gray_bg">#f0eff5</color>
+    <color name="gray_line">#ebebeb</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_text">#212121</color>
+</resources>

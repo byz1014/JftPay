@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">jftpay</string>
+    <string name="scheme"></string><!-- ���������з�ԭ��app֧��ʱ��Ҫ����-->
+    <string name="digital_scheme"></string>
+    <string name="net_errormsg">请检查网络</string>
+
+    <string name="btn_back">返回</string>
+    <string name="title_paymode">支付方式</string>
+    <string name="wxpay">微信支付</string>
+    <string name="btn_dopay">去支付</string>
+    <string name="alipay">支付宝</string>
+    <string name="payway">支付方式</string>
+</resources>

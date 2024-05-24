@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clickable="true"
+	android:orientation="vertical" >
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="450dp"
+		android:layout_gravity="bottom"
+		android:background="#ffffff"
+		android:padding="18dp"
+		android:orientation="vertical" >
+
+		<ImageView
+			android:id="@+id/iv_loo_close"
+			android:layout_width="18dp"
+			android:layout_height="18dp"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="20dp"
+			android:layout_marginRight="20dp"
+			android:src="@drawable/jft_loo_close"></ImageView>
+
+		<TextView
+			android:id="@+id/message"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerInParent="true"
+			android:lineSpacingMultiplier="1.5"
+			android:text="支付正在处理，请稍后"
+			android:minHeight="50dp"
+			android:paddingLeft="20dp"
+			android:paddingRight="20dp" />
+
+		<ImageView
+			android:id="@+id/iv_loo"
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:layout_alignTop="@id/message"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="-90dp"
+			android:src="@drawable/jft_loo"></ImageView>
+
+		<TextView
+			android:id="@+id/tv_close"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="110dp"
+			android:layout_centerHorizontal="true"
+			android:text="知道了"
+			android:background="@drawable/jft_loo_tv_border"
+			android:textColor="#FE7E7F" />
+	</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/custom_title_layout"
+        style="@style/NavBar">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/NavBarLeftBtn"
+            android:text="@string/btn_back"></Button>
+
+        <TextView
+            android:id="@+id/menu_title"
+            style="@style/NavBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/title_paymode"></TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_orderdetial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff">
+
+        <TextView
+            style="@style/ICBCLine"
+            android:layout_width="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_shopicon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="14dp"
+            android:src="@drawable/shopicon" />
+
+        <RelativeLayout
+            android:id="@+id/rl_shopinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_shopicon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/iv_shopicon">
+
+            <TextView
+                android:id="@+id/tv_orderamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="210"
+                android:textColor="#666666"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_orderamount"
+                android:text="元"
+                android:textColor="#666666"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_orderamount"
+                android:layout_marginTop="11dp"
+                android:text="世际华联-猫山王品牌旗舰蛋糕店公主坟店"
+                android:textColor="#666666"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        style="@style/ICBCLine"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/payway"
+        android:textColor="#666666"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_icbcpay"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+
+            <TextView
+                android:id="@+id/tv_firstline"
+                style="@style/ICBCLine"
+                android:layout_width="match_parent" />
+
+            <ImageView
+                android:layout_width="216dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/icbcdesp"
+
+                />
+
+            <ImageView
+                android:id="@+id/iv_icbcpay_unchecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/radiounselected" />
+
+            <ImageView
+                android:id="@+id/iv_icbcpay_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/radioselected"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_wxpay"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+
+            <TextView
+                android:id="@+id/tv_secondline"
+                style="@style/ICBCLine"
+                android:layout_width="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_icbclogo"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/wxlogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/iv_icbclogo"
+                android:text="@string/wxpay"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/iv_wxpay_unchecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/radiounselected" />
+
+            <ImageView
+                android:id="@+id/iv_wxpay_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/radioselected"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="53dp">
+
+            <TextView
+                android:id="@+id/tv_thirdline"
+                style="@style/ICBCLine"
+                android:layout_width="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_alilogo"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/alilogo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/iv_alilogo"
+                android:text="@string/alipay"
+                android:textColor="#333333"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/iv_alipay_unchecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/radiounselected" />
+
+            <ImageView
+                android:id="@+id/iv_alipay_checked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/radioselected"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_bottomline"
+            style="@style/ICBCLine"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/selector_button_red_bg"
+        android:text="@string/btn_dopay"
+        android:textColor="#ffffff"
+        android:textSize="17dp" />
+
+</LinearLayout>

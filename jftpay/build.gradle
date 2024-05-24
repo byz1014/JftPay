@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+        }
+    }
+    sourceSets.main{
+        jni.srcDirs = []
+        jniLibs.srcDirs = ['libs']
+    }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+repositories{
+    flatDir{
+        dirs 'libs','../app/libs'
+    }
+}
+
+dependencies {
+
+    api files('libs/fastjson-1.2.83.jar')
+    api files('libs/UPPayAssistEx.jar')
+    api files('libs/UPPayPluginExPro.jar')
+    api 'androidx.cardview:cardview:1.0.0'
+    api(name: 'alipaySdk-15.6.8-20191021122514', ext: 'aar')
+    api 'com.android.support:appcompat-v7:25+'
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api(name: 'wechat-sdk-android-without-mta-6.8.0', ext: 'aar')
+    api(name: 'alipaySdk-15.6.8-20191021122514', ext: 'aar')
+    api fileTree(include: ['*.jar'], dir: 'libs')
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#feffffff">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="28dp"></View>
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:visibility="gone"
+            android:textColor="#1878FF"
+            android:textSize="20dp"
+            android:layout_marginRight="18dp"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:id="@+id/iv_suce"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/tv_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ws"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:layout_below="@id/iv_suce"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付成功"
+            android:textColor="#02C160"
+            android:textSize="12dp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="京东商城平台商户"/>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="￥109.72"/>
+
+    <TextView
+        android:id="@+id/btn_close_wxpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="280dp"
+        android:background="#F2F2F2"
+        android:paddingLeft="20dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingRight="20dp"
+        android:text="返回商家"
+        android:textColor="#04C160" />
+</LinearLayout>
