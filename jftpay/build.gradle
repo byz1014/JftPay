@@ -36,7 +36,7 @@ dependencies {
     api files('libs/UPPayPluginExPro.jar')
     api 'androidx.cardview:cardview:1.0.0'
     api(name: 'alipaySdk-15.6.8-20191021122514', ext: 'aar')
-    api 'com.android.support:appcompat-v7:25+'
+    api 'com.android.support:appcompat-v7:25.4.0'
     api fileTree(include: ['*.jar'], dir: 'libs')
     api(name: 'wechat-sdk-android-without-mta-6.8.0', ext: 'aar')
     api(name: 'alipaySdk-15.6.8-20191021122514', ext: 'aar')
